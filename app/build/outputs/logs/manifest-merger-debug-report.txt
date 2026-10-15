@@ -1,0 +1,317 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/f60ddf7ead28b925338a25115c366bd6/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/f35b72f2eaf148f33bd6692989faad51/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/1d5f182772804ae98b445e598d78c567/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/f35346500904caa21358701156b76719/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/75953086882b37282f70dc3c204b96a5/transformed/navigation-compose-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /home/pedrosinas/.gradle/caches/transforms-4/b088136c3e4e67cb47c373d671020d0d/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-compose:1.8.2] /home/pedrosinas/.gradle/caches/transforms-4/8c76e449e123806865753a09e856ec96/transformed/activity-compose-1.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/b1a3b9c8ede8db31f93e1dc492c782e4/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0f3ad35a18b63cca87a6bfbd2feb8dff/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/9f3455fb87fb8c5edcd901dbc65ecfd1/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0c613081959e7576cab86d2feb55806f/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0d0864e227dc559b6d03f2645338b891/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0576688e4fde80d9d95b142b782632d3/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/73f60dc1fbcc27cef93f40194f71d063/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/2b7ea5023382dbcc86501baa4ecc151a/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/4b64704e52e295b31ca9920f32af24c8/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/4665ea6ae183cd9101e4841267528498/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/d6be7387e78caf5a3da4ec09da3dface/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/cdf39f9248ad8e213c4d9c46267a5709/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/59878bdb009940efb86c7c691216f964/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/14e54c5c402ed45dafc26c4e5225d360/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/pedrosinas/.gradle/caches/transforms-4/506664ca068607210b842cd7b25f9176/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/pedrosinas/.gradle/caches/transforms-4/da9608fc1cd0d647e0fa40f2745cd44f/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/77d14185bc9e2e9e3f7d61b21770d667/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/7e49c12dd7ee6f61d63ff351c1cdd89e/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/c2936a7545a2b6db23569b9c4cb5e18c/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/b7fa3e0f95f42c0cf87f9c72e9a5d91b/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/9170aa324c49189e4c93758100e35611/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/2bbdf27cbae5fd0cc7dc464727309d4d/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/831bee63e493dceab921a188df77417d/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.8.2] /home/pedrosinas/.gradle/caches/transforms-4/816b8adf92f92ad97a0499251511d737/transformed/activity-ktx-1.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.8.2] /home/pedrosinas/.gradle/caches/transforms-4/8cb15a784a89f2b4bb3c89deb4d8ca3f/transformed/activity-1.8.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.autofill:autofill:1.0.0] /home/pedrosinas/.gradle/caches/transforms-4/e1cd010a86ba5928ad3833af7e3ebf7c/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/pedrosinas/.gradle/caches/transforms-4/2b402150c97073bd33a136ff0c3f65a6/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/62eddab59ddccabea7d0b066f3438cdf/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/5c48af86168d0c11213cdb1bba6d4eab/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/56856d0dce0658057c93f4974566dea2/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0ed79db9218a22c2b4b764b4885a9f35/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/260b746a1e03d02756362ea41ce55d36/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/pedrosinas/.gradle/caches/transforms-4/cb1a8ac97b039607d7b767582159231a/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/pedrosinas/.gradle/caches/transforms-4/c954db63a6e145d101489dda7cb3eccf/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/pedrosinas/.gradle/caches/transforms-4/facdeb3f1a499e17bf3118b9799f0d83/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/pedrosinas/.gradle/caches/transforms-4/b1008be7c9e3616409c6009255c08088/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/pedrosinas/.gradle/caches/transforms-4/69eae739f5a8cc366168a7a7c9de4e40/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/pedrosinas/.gradle/caches/transforms-4/f6213bff131af85ce2136c0940337026/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/pedrosinas/.gradle/caches/transforms-4/c4a1b076d92fe727c39824e1ed00acda/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/pedrosinas/.gradle/caches/transforms-4/d24bf0d0351fcbbd0d1381385b9a606a/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+	package
+		INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:4:5-19:19
+INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:4:5-19:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/59878bdb009940efb86c7c691216f964/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/59878bdb009940efb86c7c691216f964/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.room:room-runtime:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/5c48af86168d0c11213cdb1bba6d4eab/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/5c48af86168d0c11213cdb1bba6d4eab/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/pedrosinas/.gradle/caches/transforms-4/b1008be7c9e3616409c6009255c08088/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/pedrosinas/.gradle/caches/transforms-4/b1008be7c9e3616409c6009255c08088/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/pedrosinas/.gradle/caches/transforms-4/c4a1b076d92fe727c39824e1ed00acda/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/pedrosinas/.gradle/caches/transforms-4/c4a1b076d92fe727c39824e1ed00acda/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:7:9-35
+	android:label
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:6:9-40
+	android:allowBackup
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:5:9-35
+	android:theme
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:8:9-66
+activity#com.workoutmanager.MainActivity
+ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:10:9-17:20
+	android:exported
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:12:13-36
+	android:name
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:11:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:13:13-16:29
+action#android.intent.action.MAIN
+ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:15:17-77
+	android:name
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:15:27-74
+uses-sdk
+INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml
+INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/f60ddf7ead28b925338a25115c366bd6/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/f60ddf7ead28b925338a25115c366bd6/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/f35b72f2eaf148f33bd6692989faad51/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/f35b72f2eaf148f33bd6692989faad51/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/1d5f182772804ae98b445e598d78c567/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/1d5f182772804ae98b445e598d78c567/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/f35346500904caa21358701156b76719/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/f35346500904caa21358701156b76719/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/75953086882b37282f70dc3c204b96a5/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/75953086882b37282f70dc3c204b96a5/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /home/pedrosinas/.gradle/caches/transforms-4/b088136c3e4e67cb47c373d671020d0d/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /home/pedrosinas/.gradle/caches/transforms-4/b088136c3e4e67cb47c373d671020d0d/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] /home/pedrosinas/.gradle/caches/transforms-4/8c76e449e123806865753a09e856ec96/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] /home/pedrosinas/.gradle/caches/transforms-4/8c76e449e123806865753a09e856ec96/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/b1a3b9c8ede8db31f93e1dc492c782e4/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/b1a3b9c8ede8db31f93e1dc492c782e4/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0f3ad35a18b63cca87a6bfbd2feb8dff/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0f3ad35a18b63cca87a6bfbd2feb8dff/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/9f3455fb87fb8c5edcd901dbc65ecfd1/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/9f3455fb87fb8c5edcd901dbc65ecfd1/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0c613081959e7576cab86d2feb55806f/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0c613081959e7576cab86d2feb55806f/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0d0864e227dc559b6d03f2645338b891/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0d0864e227dc559b6d03f2645338b891/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0576688e4fde80d9d95b142b782632d3/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0576688e4fde80d9d95b142b782632d3/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/73f60dc1fbcc27cef93f40194f71d063/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/73f60dc1fbcc27cef93f40194f71d063/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/2b7ea5023382dbcc86501baa4ecc151a/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/2b7ea5023382dbcc86501baa4ecc151a/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/4b64704e52e295b31ca9920f32af24c8/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/4b64704e52e295b31ca9920f32af24c8/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/4665ea6ae183cd9101e4841267528498/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/4665ea6ae183cd9101e4841267528498/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/d6be7387e78caf5a3da4ec09da3dface/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/d6be7387e78caf5a3da4ec09da3dface/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/cdf39f9248ad8e213c4d9c46267a5709/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/cdf39f9248ad8e213c4d9c46267a5709/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/59878bdb009940efb86c7c691216f964/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/59878bdb009940efb86c7c691216f964/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/14e54c5c402ed45dafc26c4e5225d360/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/14e54c5c402ed45dafc26c4e5225d360/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/pedrosinas/.gradle/caches/transforms-4/506664ca068607210b842cd7b25f9176/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/pedrosinas/.gradle/caches/transforms-4/506664ca068607210b842cd7b25f9176/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/pedrosinas/.gradle/caches/transforms-4/da9608fc1cd0d647e0fa40f2745cd44f/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/pedrosinas/.gradle/caches/transforms-4/da9608fc1cd0d647e0fa40f2745cd44f/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/77d14185bc9e2e9e3f7d61b21770d667/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/77d14185bc9e2e9e3f7d61b21770d667/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/7e49c12dd7ee6f61d63ff351c1cdd89e/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/7e49c12dd7ee6f61d63ff351c1cdd89e/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/c2936a7545a2b6db23569b9c4cb5e18c/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/c2936a7545a2b6db23569b9c4cb5e18c/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/b7fa3e0f95f42c0cf87f9c72e9a5d91b/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/b7fa3e0f95f42c0cf87f9c72e9a5d91b/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/9170aa324c49189e4c93758100e35611/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/9170aa324c49189e4c93758100e35611/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/2bbdf27cbae5fd0cc7dc464727309d4d/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/2bbdf27cbae5fd0cc7dc464727309d4d/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/831bee63e493dceab921a188df77417d/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/831bee63e493dceab921a188df77417d/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] /home/pedrosinas/.gradle/caches/transforms-4/816b8adf92f92ad97a0499251511d737/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] /home/pedrosinas/.gradle/caches/transforms-4/816b8adf92f92ad97a0499251511d737/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.8.2] /home/pedrosinas/.gradle/caches/transforms-4/8cb15a784a89f2b4bb3c89deb4d8ca3f/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.2] /home/pedrosinas/.gradle/caches/transforms-4/8cb15a784a89f2b4bb3c89deb4d8ca3f/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /home/pedrosinas/.gradle/caches/transforms-4/e1cd010a86ba5928ad3833af7e3ebf7c/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /home/pedrosinas/.gradle/caches/transforms-4/e1cd010a86ba5928ad3833af7e3ebf7c/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/pedrosinas/.gradle/caches/transforms-4/2b402150c97073bd33a136ff0c3f65a6/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/pedrosinas/.gradle/caches/transforms-4/2b402150c97073bd33a136ff0c3f65a6/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/62eddab59ddccabea7d0b066f3438cdf/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/62eddab59ddccabea7d0b066f3438cdf/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/5c48af86168d0c11213cdb1bba6d4eab/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/5c48af86168d0c11213cdb1bba6d4eab/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/56856d0dce0658057c93f4974566dea2/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/56856d0dce0658057c93f4974566dea2/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0ed79db9218a22c2b4b764b4885a9f35/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/0ed79db9218a22c2b4b764b4885a9f35/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/260b746a1e03d02756362ea41ce55d36/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.4] /home/pedrosinas/.gradle/caches/transforms-4/260b746a1e03d02756362ea41ce55d36/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/pedrosinas/.gradle/caches/transforms-4/cb1a8ac97b039607d7b767582159231a/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/pedrosinas/.gradle/caches/transforms-4/cb1a8ac97b039607d7b767582159231a/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/pedrosinas/.gradle/caches/transforms-4/c954db63a6e145d101489dda7cb3eccf/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/pedrosinas/.gradle/caches/transforms-4/c954db63a6e145d101489dda7cb3eccf/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/pedrosinas/.gradle/caches/transforms-4/facdeb3f1a499e17bf3118b9799f0d83/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/pedrosinas/.gradle/caches/transforms-4/facdeb3f1a499e17bf3118b9799f0d83/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/pedrosinas/.gradle/caches/transforms-4/b1008be7c9e3616409c6009255c08088/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/pedrosinas/.gradle/caches/transforms-4/b1008be7c9e3616409c6009255c08088/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/pedrosinas/.gradle/caches/transforms-4/69eae739f5a8cc366168a7a7c9de4e40/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/pedrosinas/.gradle/caches/transforms-4/69eae739f5a8cc366168a7a7c9de4e40/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/pedrosinas/.gradle/caches/transforms-4/f6213bff131af85ce2136c0940337026/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/pedrosinas/.gradle/caches/transforms-4/f6213bff131af85ce2136c0940337026/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/pedrosinas/.gradle/caches/transforms-4/c4a1b076d92fe727c39824e1ed00acda/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/pedrosinas/.gradle/caches/transforms-4/c4a1b076d92fe727c39824e1ed00acda/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/pedrosinas/.gradle/caches/transforms-4/d24bf0d0351fcbbd0d1381385b9a606a/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/pedrosinas/.gradle/caches/transforms-4/d24bf0d0351fcbbd0d1381385b9a606a/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/59878bdb009940efb86c7c691216f964/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/59878bdb009940efb86c7c691216f964/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/pedrosinas/.gradle/caches/transforms-4/c4a1b076d92fe727c39824e1ed00acda/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/pedrosinas/.gradle/caches/transforms-4/c4a1b076d92fe727c39824e1ed00acda/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/59878bdb009940efb86c7c691216f964/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/59878bdb009940efb86c7c691216f964/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/59878bdb009940efb86c7c691216f964/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+permission#com.workoutmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+uses-permission#com.workoutmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/5c48af86168d0c11213cdb1bba6d4eab/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/5c48af86168d0c11213cdb1bba6d4eab/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/5c48af86168d0c11213cdb1bba6d4eab/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/5c48af86168d0c11213cdb1bba6d4eab/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/pedrosinas/.gradle/caches/transforms-4/5c48af86168d0c11213cdb1bba6d4eab/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/5659251f4976ce49db72b90d7069c2d4/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92

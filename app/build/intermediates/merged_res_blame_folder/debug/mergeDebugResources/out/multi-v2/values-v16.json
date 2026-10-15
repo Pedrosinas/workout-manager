@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.workoutmanager.app-mergeDebugResources-48:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}
