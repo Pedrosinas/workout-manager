@@ -7,6 +7,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -15,6 +16,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.workoutmanager.data.local.entity.WorkoutEntity
 import com.workoutmanager.ui.components.CreateWorkoutDialog
+import com.workoutmanager.ui.components.EditWorkoutDialog
 import com.workoutmanager.ui.viewmodel.WorkoutListUiState
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -22,20 +24,22 @@ import com.workoutmanager.ui.viewmodel.WorkoutListUiState
 fun WorkoutListScreen(
     uiState: WorkoutListUiState,
     onCreateWorkout: (name: String, description: String) -> Unit,
+    onUpdateWorkout: (WorkoutEntity, String, String) -> Unit,
     onDeleteWorkout: (WorkoutEntity) -> Unit,
     onWorkoutClicked: (Long) -> Unit
 ) {
-    var showDialog by remember { mutableStateOf(false) }
+    var showCreateDialog by remember { mutableStateOf(false) }
+    var workoutToEdit by remember { mutableStateOf<WorkoutEntity?>(null) }
 
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Workout Manager", fontWeight = FontWeight.Bold) }
+                title = { Text("Gerenciador de Treinos", fontWeight = FontWeight.Bold) }
             )
         },
         floatingActionButton = {
-            FloatingActionButton(onClick = { showDialog = true }) {
-                Icon(Icons.Default.Add, contentDescription = "New Workout")
+            FloatingActionButton(onClick = { showCreateDialog = true }) {
+                Icon(Icons.Default.Add, contentDescription = "Novo Treino")
             }
         }
     ) { padding ->
@@ -45,34 +49,34 @@ fun WorkoutListScreen(
                 .padding(padding)
         ) {
             if (uiState.workouts.isEmpty()) {
-                // CLEAN SLATE REQUIREMENT: 0 Workouts placeholder
                 Column(
                     modifier = Modifier.fillMaxSize().padding(32.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center
                 ) {
                     Text(
-                        text = "No Workouts Yet",
+                        text = "Nenhum Treino Cadastrado",
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.Bold
                     )
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(
-                        text = "Create your own customized routine (e.g. 'Push Day', 'Leg Day'). Start clean with your own exercises.",
+                        text = "Crie sua rotina personalizada (ex: 'Peito e Tríceps', 'Perna'). Comece limpo com seus próprios exercícios.",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                     Spacer(modifier = Modifier.height(16.dp))
-                    Button(onClick = { showDialog = true }) {
+                    Button(onClick = { showCreateDialog = true }) {
                         Icon(Icons.Default.Add, contentDescription = null)
                         Spacer(modifier = Modifier.width(8.dp))
-                        Text("Create First Workout")
+                        Text("Criar Primeiro Treino")
                     }
                 }
             } else {
                 LazyColumn(
                     modifier = Modifier.fillMaxSize(),
-                    contentPadding = PaddingValues(16.dp),
+                    // AQUI: bottom = 90.dp garante que o botão + nunca fique em cima do último item!
+                    contentPadding = PaddingValues(start = 16.dp, top = 16.dp, end = 16.dp, bottom = 90.dp),
                     verticalArrangement = Arrangement.spacedBy(10.dp)
                 ) {
                     items(items = uiState.workouts, key = { it.id }) { workout ->
@@ -102,12 +106,17 @@ fun WorkoutListScreen(
                                         )
                                     }
                                 }
-                                IconButton(onClick = { onDeleteWorkout(workout) }) {
-                                    Icon(
-                                        Icons.Default.Delete,
-                                        contentDescription = "Delete",
-                                        tint = MaterialTheme.colorScheme.error
-                                    )
+                                Row {
+                                    IconButton(onClick = { workoutToEdit = workout }) {
+                                        Icon(Icons.Default.Edit, contentDescription = "Editar")
+                                    }
+                                    IconButton(onClick = { onDeleteWorkout(workout) }) {
+                                        Icon(
+                                            Icons.Default.Delete,
+                                            contentDescription = "Excluir",
+                                            tint = MaterialTheme.colorScheme.error
+                                        )
+                                    }
                                 }
                             }
                         }
@@ -117,12 +126,23 @@ fun WorkoutListScreen(
         }
     }
 
-    if (showDialog) {
+    if (showCreateDialog) {
         CreateWorkoutDialog(
-            onDismiss = { showDialog = false },
+            onDismiss = { showCreateDialog = false },
             onConfirm = { name, desc ->
                 onCreateWorkout(name, desc)
-                showDialog = false
+                showCreateDialog = false
+            }
+        )
+    }
+
+    workoutToEdit?.let { workout ->
+        EditWorkoutDialog(
+            workout = workout,
+            onDismiss = { workoutToEdit = null },
+            onConfirm = { name, desc ->
+                onUpdateWorkout(workout, name, desc)
+                workoutToEdit = null
             }
         )
     }

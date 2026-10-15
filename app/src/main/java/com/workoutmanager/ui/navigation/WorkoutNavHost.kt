@@ -20,7 +20,6 @@ fun WorkoutNavHost(repository: WorkoutRepository) {
         navController = navController,
         startDestination = "workout_list"
     ) {
-        // SCREEN 1: Workout List
         composable("workout_list") {
             val viewModel = remember { WorkoutListViewModel(repository) }
             val uiState by viewModel.uiState.collectAsState()
@@ -28,6 +27,7 @@ fun WorkoutNavHost(repository: WorkoutRepository) {
             WorkoutListScreen(
                 uiState = uiState,
                 onCreateWorkout = { name, desc -> viewModel.createWorkout(name, desc) },
+                onUpdateWorkout = { workout, name, desc -> viewModel.updateWorkout(workout, name, desc) },
                 onDeleteWorkout = { workout -> viewModel.deleteWorkout(workout) },
                 onWorkoutClicked = { workoutId ->
                     navController.navigate("workout_detail/$workoutId")
@@ -35,7 +35,6 @@ fun WorkoutNavHost(repository: WorkoutRepository) {
             )
         }
 
-        // SCREEN 2: Workout Details (Exercises)
         composable(
             route = "workout_detail/{workoutId}",
             arguments = listOf(navArgument("workoutId") { type = NavType.LongType })
@@ -49,6 +48,9 @@ fun WorkoutNavHost(repository: WorkoutRepository) {
                 onBack = { navController.popBackStack() },
                 onAddExercise = { name, reps, weight, notes ->
                     viewModel.addExercise(name, reps, weight, notes)
+                },
+                onUpdateExercise = { exercise, name, reps, weight, notes ->
+                    viewModel.updateExercise(exercise, name, reps, weight, notes)
                 },
                 onStepWeight = { exercise, increase ->
                     viewModel.stepWeight(exercise, increase)

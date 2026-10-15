@@ -7,6 +7,8 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import com.workoutmanager.data.local.entity.ExerciseEntity
+import com.workoutmanager.data.local.entity.WorkoutEntity
 
 @Composable
 fun CreateWorkoutDialog(
@@ -18,22 +20,22 @@ fun CreateWorkoutDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Create New Workout") },
+        title = { Text("Novo Treino") },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 OutlinedTextField(
                     value = name,
                     onValueChange = { name = it },
-                    label = { Text("Workout Name *") },
-                    placeholder = { Text("e.g. Workout A - Push") },
+                    label = { Text("Nome do Treino *") },
+                    placeholder = { Text("Ex: Treino A - Peito") },
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
                 )
                 OutlinedTextField(
                     value = description,
                     onValueChange = { description = it },
-                    label = { Text("Focus / Notes (Optional)") },
-                    placeholder = { Text("e.g. Chest, Shoulders, Triceps") },
+                    label = { Text("Foco / Descrição (Opcional)") },
+                    placeholder = { Text("Ex: Foco em peito e tríceps") },
                     maxLines = 2,
                     modifier = Modifier.fillMaxWidth()
                 )
@@ -44,11 +46,55 @@ fun CreateWorkoutDialog(
                 onClick = { if (name.isNotBlank()) onConfirm(name.trim(), description.trim()) },
                 enabled = name.isNotBlank()
             ) {
-                Text("Create")
+                Text("Criar")
             }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) { Text("Cancel") }
+            TextButton(onClick = onDismiss) { Text("Cancelar") }
+        }
+    )
+}
+
+@Composable
+fun EditWorkoutDialog(
+    workout: WorkoutEntity,
+    onDismiss: () -> Unit,
+    onConfirm: (name: String, description: String) -> Unit
+) {
+    var name by remember { mutableStateOf(workout.name) }
+    var description by remember { mutableStateOf(workout.description) }
+
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text("Editar Treino") },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                OutlinedTextField(
+                    value = name,
+                    onValueChange = { name = it },
+                    label = { Text("Nome do Treino *") },
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
+                )
+                OutlinedTextField(
+                    value = description,
+                    onValueChange = { description = it },
+                    label = { Text("Foco / Descrição") },
+                    maxLines = 2,
+                    modifier = Modifier.fillMaxWidth()
+                )
+            }
+        },
+        confirmButton = {
+            Button(
+                onClick = { if (name.isNotBlank()) onConfirm(name.trim(), description.trim()) },
+                enabled = name.isNotBlank()
+            ) {
+                Text("Salvar")
+            }
+        },
+        dismissButton = {
+            TextButton(onClick = onDismiss) { Text("Cancelar") }
         }
     )
 }
@@ -68,30 +114,30 @@ fun AddExerciseDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Add Exercise") },
+        title = { Text("Adicionar Exercício") },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 OutlinedTextField(
                     value = name,
                     onValueChange = { name = it },
-                    label = { Text("Exercise Name *") },
-                    placeholder = { Text("e.g. Barbell Bench Press") },
+                    label = { Text("Nome do Exercício *") },
+                    placeholder = { Text("Ex: Supino Reto") },
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
                 )
                 OutlinedTextField(
                     value = targetReps,
                     onValueChange = { targetReps = it },
-                    label = { Text("Target Repetitions *") },
-                    placeholder = { Text("e.g. 8-12 or 5x5") },
+                    label = { Text("Repetições Alvo *") },
+                    placeholder = { Text("Ex: 8-12 ou 4x10") },
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
                 )
                 OutlinedTextField(
                     value = weightText,
                     onValueChange = { weightText = it },
-                    label = { Text("Last Session Weight (kg) *") },
-                    placeholder = { Text("e.g. 80.0") },
+                    label = { Text("Carga Atual (kg) *") },
+                    placeholder = { Text("Ex: 80.0") },
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
@@ -99,8 +145,8 @@ fun AddExerciseDialog(
                 OutlinedTextField(
                     value = notes,
                     onValueChange = { notes = it },
-                    label = { Text("Form Cues (Optional)") },
-                    placeholder = { Text("e.g. Touch chest lightly, pause") },
+                    label = { Text("Observação / Carga de Halter (Opcional)") },
+                    placeholder = { Text("Ex: Pausa de 1s embaixo") },
                     maxLines = 2,
                     modifier = Modifier.fillMaxWidth()
                 )
@@ -111,11 +157,75 @@ fun AddExerciseDialog(
                 onClick = { if (isValid) onConfirm(name.trim(), targetReps.trim(), parsedWeight, notes.trim()) },
                 enabled = isValid
             ) {
-                Text("Add")
+                Text("Adicionar")
             }
         },
         dismissButton = {
-            TextButton(onClick = onDismiss) { Text("Cancel") }
+            TextButton(onClick = onDismiss) { Text("Cancelar") }
+        }
+    )
+}
+
+@Composable
+fun EditExerciseDialog(
+    exercise: ExerciseEntity,
+    onDismiss: () -> Unit,
+    onConfirm: (name: String, targetReps: String, weight: Double, notes: String) -> Unit
+) {
+    var name by remember { mutableStateOf(exercise.name) }
+    var targetReps by remember { mutableStateOf(exercise.targetRepetitions) }
+    var weightText by remember { mutableStateOf(exercise.lastWeight.toString()) }
+    var notes by remember { mutableStateOf(exercise.notes) }
+
+    val parsedWeight = weightText.toDoubleOrNull() ?: 0.0
+    val isValid = name.isNotBlank() && targetReps.isNotBlank() && parsedWeight >= 0.0
+
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text("Editar Exercício") },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                OutlinedTextField(
+                    value = name,
+                    onValueChange = { name = it },
+                    label = { Text("Nome do Exercício *") },
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
+                )
+                OutlinedTextField(
+                    value = targetReps,
+                    onValueChange = { targetReps = it },
+                    label = { Text("Repetições Alvo *") },
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
+                )
+                OutlinedTextField(
+                    value = weightText,
+                    onValueChange = { weightText = it },
+                    label = { Text("Carga (kg) *") },
+                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
+                )
+                OutlinedTextField(
+                    value = notes,
+                    onValueChange = { notes = it },
+                    label = { Text("Observação") },
+                    maxLines = 2,
+                    modifier = Modifier.fillMaxWidth()
+                )
+            }
+        },
+        confirmButton = {
+            Button(
+                onClick = { if (isValid) onConfirm(name.trim(), targetReps.trim(), parsedWeight, notes.trim()) },
+                enabled = isValid
+            ) {
+                Text("Salvar")
+            }
+        },
+        dismissButton = {
+            TextButton(onClick = onDismiss) { Text("Cancelar") }
         }
     )
 }

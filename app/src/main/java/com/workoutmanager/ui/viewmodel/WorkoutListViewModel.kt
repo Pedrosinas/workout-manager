@@ -11,37 +11,37 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
-/**
- * The data snapshot that our HomeScreen will display.
- */
 data class WorkoutListUiState(
     val workouts: List<WorkoutEntity> = emptyList(),
     val isLoading: Boolean = false
 )
 
-class WorkoutListViewModel(private val repository: WorkoutRepository) : ViewModel() {
+class WorkoutListViewModel(
+    private val repository: WorkoutRepository
+) : ViewModel() {
 
-    // Converts our database Flow into a UI StateFlow
     val uiState: StateFlow<WorkoutListUiState> = repository.allWorkouts
         .combine(MutableStateFlow(false)) { workouts, _ ->
             WorkoutListUiState(workouts = workouts, isLoading = false)
         }
         .stateIn(
             scope = viewModelScope,
-            started = SharingStarted.WhileSubscribed(5000), // Pauses when screen is off to save battery
+            started = SharingStarted.WhileSubscribed(5000),
             initialValue = WorkoutListUiState(isLoading = true)
         )
 
     fun createWorkout(name: String, description: String = "") {
         if (name.isBlank()) return
-        viewModelScope.launch {
-            repository.createWorkout(name, description)
-        }
+        viewModelScope.launch { repository.createWorkout(name, description) }
+    }
+
+    // NOVO: Função para salvar edição de treino
+    fun updateWorkout(workout: WorkoutEntity, newName: String, newDescription: String) {
+        if (newName.isBlank()) return
+        viewModelScope.launch { repository.updateWorkout(workout, newName, newDescription) }
     }
 
     fun deleteWorkout(workout: WorkoutEntity) {
-        viewModelScope.launch {
-            repository.deleteWorkout(workout)
-        }
+        viewModelScope.launch { repository.deleteWorkout(workout) }
     }
 }

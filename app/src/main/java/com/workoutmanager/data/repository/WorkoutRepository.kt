@@ -8,71 +8,66 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
 
-/**
- * Single source of truth coordinating database operations.
- */
 class WorkoutRepository(
     private val workoutDao: WorkoutDao,
     private val exerciseDao: ExerciseDao
 ) {
-    // WORKOUT OPERATIONS
-
     val allWorkouts: Flow<List<WorkoutEntity>> = workoutDao.getAllWorkouts()
 
-    fun getWorkout(workoutId: Long): Flow<WorkoutEntity?> {
-        return workoutDao.getWorkoutById(workoutId)
-    }
+    fun getWorkout(workoutId: Long): Flow<WorkoutEntity?> = workoutDao.getWorkoutById(workoutId)
 
-    suspend fun createWorkout(name: String, description: String = ""): Long {
-        return withContext(Dispatchers.IO) {
-            val workout = WorkoutEntity(
-                name = name.trim(),
-                description = description.trim()
-            )
-            workoutDao.insertWorkout(workout)
+    suspend fun createWorkout(name: String, description: String = ""): Long =
+        withContext(Dispatchers.IO) {
+            workoutDao.insertWorkout(WorkoutEntity(name = name.trim(), description = description.trim()))
         }
-    }
 
-    suspend fun deleteWorkout(workout: WorkoutEntity) {
+    // NOVO: Atualizar treino
+    suspend fun updateWorkout(workout: WorkoutEntity, newName: String, newDescription: String) =
+        withContext(Dispatchers.IO) {
+            workoutDao.updateWorkout(workout.copy(name = newName.trim(), description = newDescription.trim()))
+        }
+
+    suspend fun deleteWorkout(workout: WorkoutEntity) =
         withContext(Dispatchers.IO) {
             workoutDao.deleteWorkout(workout)
         }
-    }
 
-    // EXERCISE OPERATIONS
+    fun getExercisesForWorkout(workoutId: Long): Flow<List<ExerciseEntity>> =
+        exerciseDao.getExercisesForWorkout(workoutId)
 
-    fun getExercisesForWorkout(workoutId: Long): Flow<List<ExerciseEntity>> {
-        return exerciseDao.getExercisesForWorkout(workoutId)
-    }
-
-    suspend fun addExercise(
-        workoutId: Long,
-        name: String,
-        targetReps: String,
-        weight: Double,
-        notes: String = ""
-    ): Long {
-        return withContext(Dispatchers.IO) {
-            val exercise = ExerciseEntity(
-                workoutId = workoutId,
-                name = name.trim(),
-                targetRepetitions = targetReps.trim(),
-                lastWeight = weight,
-                notes = notes.trim()
+    suspend fun addExercise(workoutId: Long, name: String, targetReps: String, weight: Double, notes: String = ""): Long =
+        withContext(Dispatchers.IO) {
+            exerciseDao.insertExercise(
+                ExerciseEntity(
+                    workoutId = workoutId,
+                    name = name.trim(),
+                    targetRepetitions = targetReps.trim(),
+                    lastWeight = weight,
+                    notes = notes.trim()
+                )
             )
-            exerciseDao.insertExercise(exercise)
         }
-    }
 
-    suspend fun updateWeight(exerciseId: Long, newWeight: Double) {
+    // NOVO: Atualizar exercício completo
+    suspend fun updateExercise(exercise: ExerciseEntity, name: String, reps: String, weight: Double, notes: String) =
+        withContext(Dispatchers.IO) {
+            exerciseDao.updateExercise(
+                exercise.copy(
+                    name = name.trim(),
+                    targetRepetitions = reps.trim(),
+                    lastWeight = weight,
+                    notes = notes.trim()
+                )
+            )
+        }
+
+    suspend fun updateWeight(exerciseId: Long, newWeight: Double) =
         withContext(Dispatchers.IO) {
             exerciseDao.updateWeight(exerciseId, newWeight)
         }
-    }
 
-    suspend fun deleteExercise(exercise: ExerciseEntity) {
+    suspend fun deleteExercise(exercise: ExerciseEntity) =
         withContext(Dispatchers.IO) {
             exerciseDao.deleteExercise(exercise)
         }
-    }
 }

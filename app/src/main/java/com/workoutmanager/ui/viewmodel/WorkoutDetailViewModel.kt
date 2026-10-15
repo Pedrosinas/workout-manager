@@ -39,8 +39,16 @@ class WorkoutDetailViewModel(
         }
     }
 
+    // NOVO: Função para salvar edição do exercício
+    fun updateExercise(exercise: ExerciseEntity, name: String, targetReps: String, weight: Double, notes: String) {
+        if (name.isBlank() || targetReps.isBlank() || weight < 0) return
+        viewModelScope.launch {
+            repository.updateExercise(exercise, name, targetReps, weight, notes)
+        }
+    }
+
     fun stepWeight(exercise: ExerciseEntity, increase: Boolean) {
-        val nextWeight = if (increase) exercise.lastWeight + 1.5 else (exercise.lastWeight - 1.5).coerceAtLeast(0.0)
+        val nextWeight = if (increase) exercise.lastWeight + 1.25 else (exercise.lastWeight - 1.25).coerceAtLeast(0.0)
         viewModelScope.launch {
             repository.updateWeight(exercise.id, nextWeight)
         }
