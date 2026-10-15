@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:1-23:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/f60ddf7ead28b925338a25115c366bd6/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/f35b72f2eaf148f33bd6692989faad51/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/pedrosinas/.gradle/caches/transforms-4/1d5f182772804ae98b445e598d78c567/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
@@ -63,8 +63,8 @@ MERGED from [androidx.tracing:tracing:1.0.0] /home/pedrosinas/.gradle/caches/tra
 	xmlns:android
 		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:4:5-19:19
-INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:4:5-19:19
+ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:4:5-21:19
+INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:4:5-21:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] /home/pedrosinas/.gradle/caches/transforms-4/6221a1edb9e8991daa31d72425db758e/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/pedrosinas/.gradle/caches/transforms-4/59878bdb009940efb86c7c691216f964/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
@@ -84,29 +84,33 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/pedrosinas/.gradle/ca
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] /home/pedrosinas/.gradle/caches/transforms-4/11c6d61718b35f37fbcca915a0b3a47e/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:9:9-35
 	android:label
-		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:6:9-40
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:6:9-44
+	android:roundIcon
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:8:9-50
+	android:icon
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:7:9-45
 	android:allowBackup
 		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:5:9-35
 	android:theme
-		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:8:9-66
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:10:9-66
 activity#com.workoutmanager.MainActivity
-ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:10:9-17:20
+ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:12:9-19:20
 	android:exported
-		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:12:13-36
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:14:13-36
 	android:name
-		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:11:13-41
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:13:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:13:13-16:29
+ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:15:13-18:29
 action#android.intent.action.MAIN
-ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:14:17-69
+ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:15:17-77
+ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:15:27-74
+		ADDED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml:17:27-74
 uses-sdk
 INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/pedrosinas/workout-manager/app/src/main/AndroidManifest.xml

@@ -3,7 +3,9 @@
 
     <application
         android:allowBackup="true"
-        android:label="Workout Manager"
+        android:label="Treino dos campeões"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.NoActionBar">
 

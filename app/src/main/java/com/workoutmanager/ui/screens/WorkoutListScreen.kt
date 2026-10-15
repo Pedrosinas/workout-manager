@@ -61,7 +61,7 @@ fun WorkoutListScreen(
                     )
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(
-                        text = "Crie sua rotina personalizada (ex: 'Peito e Tríceps', 'Perna'). Comece limpo com seus próprios exercícios.",
+                        text = "Crie seu treino bruto.",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
