@@ -3,6 +3,8 @@
 Aplicativo Android para gerenciar progressão de carga na academia, salvar e acompanhar a evolução.
 100% offline.
 
+---
+
 ## Tecnologias Utilizadas
 
 - **Linguagem principal**: Kotlin 1.9
